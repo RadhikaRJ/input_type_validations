@@ -10,7 +10,7 @@
 <body>
     <h1>User Input & Validation using CSS UI Pseudo Classes</h1>
     <hr>
-    <h2>Basic Input Tag with Label</h2>
+    <h3>Basic Input Tag with Label</h3>
     <h3>default: type=text</h3>
     <div class="basic-input">
         <label>Enter some text:</label>
@@ -19,13 +19,21 @@
     
     <hr>
 
-    <h3>Validating User Input for "type=text"</h3>
+    <h3>Validating User Input for type="text"</h3>
     <div class="validated-basic-input">
         <label>Enter text that is numeric only & having minimum 4 & maximum 10 charachters:</label>
         <br><br>
         <input required type="text" minlength="5" maxlength="10" pattern="^[0-9]*$" size="20" placeholder="Provide numeric input" ><span></span>
     </div>
     <hr>
-    
+
+    <h3>Validating User Input for type="number"</h3>
+    <div class="validated-basic-input">
+        <label>Enter quantity:</label>
+        <br><br>
+        <input required type="number" min="10" max="20" step="3" placeholder="number" size="25" ><span></span>
+    </div>
+    <hr>
+
 </body>
 </html>
